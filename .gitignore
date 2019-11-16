@@ -1,0 +1,11 @@
+.idea/
+*.db
+.DS_Store
+cp_vton/checkpoints/gmm_train_new/*
+cp_vton/checkpoints/tom_train_new/*
+data/raw_data/image/*
+data/raw_data/pose/*
+data/raw_data/cloth/*
+data/test
+result
+LIP_JPPNet/checkpoint/JPPNet-s2/*
