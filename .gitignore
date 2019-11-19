@@ -6,6 +6,6 @@ cp_vton/checkpoints/tom_train_new/*
 data/raw_data/image/*
 data/raw_data/pose/*
 data/raw_data/cloth/*
-data/test
+data/test/
 result
 LIP_JPPNet/checkpoint/JPPNet-s2/*

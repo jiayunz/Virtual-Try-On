@@ -72,11 +72,11 @@ def convert_keypoints(source_root_dir, target_root_dir, imname):
 def main(source_root_dir, target_root_dir, imname, cname):
     # get pose
     # os.system("OpenPose\\bin\OpenPoseDemo.exe --image_dir data\image\\")
-    #create_dir(target_root_dir)
-    #run_mat(source_root_dir, target_root_dir, imname, cname)
-    #convert_keypoints(source_root_dir, target_root_dir, imname)
+    create_dir(target_root_dir)
+    run_mat(source_root_dir, target_root_dir, imname, cname)
+    convert_keypoints(source_root_dir, target_root_dir, imname)
     # get segment
-    #JPPNet_parsing(target_root_dir + 'image/' + imname, checkpoint_dir='LIP_JPPNet/checkpoint/JPPNet-s2', output_dir='data/test/image-parse/')
+    JPPNet_parsing(target_root_dir + 'image/' + imname, checkpoint_dir='LIP_JPPNet/checkpoint/JPPNet-s2', output_dir='data/test/image-parse/')
     # run cp-vton
     gmm_opt = opt(name="gmm_traintest_new", stage="GMM", data_path='data/test', result_dir='data/test', imname=imname, cname=cname, checkpoint='cp_vton/checkpoints/gmm_train_new/gmm_final.pth')
     inference(gmm_opt)
