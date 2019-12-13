@@ -71,7 +71,7 @@ def convert_keypoints(source_root_dir, target_root_dir, imname):
 
 def main(source_root_dir, target_root_dir, imname, cname):
     # get pose
-    # os.system("OpenPose\\bin\OpenPoseDemo.exe --image_dir data\image\\")
+    #os.system("OpenPose\\bin\OpenPoseDemo.exe --image_dir data\image\\ --model_folder OpenPose\models"")
     create_dir(target_root_dir)
     run_mat(source_root_dir, target_root_dir, imname, cname)
     convert_keypoints(source_root_dir, target_root_dir, imname)
