@@ -3,6 +3,7 @@
 This project has implemented a complete procedure of virtual try on based on [cp-vton](https://github.com/sergeywong/cp-vton), [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) and [JPPNet](https://github.com/Engineering-Course/LIP_JPPNet).
 
 ## Installation
+* **Important!**: Python-3.6.5, Tensorflow-1.13.1, pytorch-1.3.0, torchvision-0.2.1 
 * Clone this project to your directory.
 * Download [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) to the```OpenPose``` directory and compile it according to its instruction.
 * Download pre-trained model for [JPPNet](https://github.com/Engineering-Course/LIP_JPPNet) and put it under ```LIP_JPPNet/checkpoint/JPPNet-s2/```. There should be 4 files in this directory: checkpoint, model.ckpt-xxx.data-xxx, model.ckpt-xxx.index, model.ckpt-xxx.meta.
