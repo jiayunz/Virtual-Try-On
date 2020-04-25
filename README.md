@@ -4,7 +4,6 @@ This project has wrapped a complete pipline of virtual try on based on official 
 
 ## Installation
 * **Important**: Python-3.6.5, Tensorflow-1.13.1, pytorch-1.3.0, torchvision-0.2.1 
-* Clone this project to your directory.
 * Download [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) to the```OpenPose``` directory and compile it according to its instruction.
 * Download pre-trained model for [JPPNet](https://github.com/Engineering-Course/LIP_JPPNet) and put it under ```LIP_JPPNet/checkpoint/JPPNet-s2/```. There should be 4 files in this directory: checkpoint, model.ckpt-xxx.data-xxx, model.ckpt-xxx.index, model.ckpt-xxx.meta.
 * Download pre-trained models for [cp-vton](https://github.com/sergeywong/cp-vton) and put them under ```cp_vton/checkpoints/```. There should be two folders as ```gmm_train_new``` and ```tom_train_new``` in this directory. The authors have not provided the original models but you may download the models from [a re-implemented one](https://github.com/cinastanbean/cp-vton).
